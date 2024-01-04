@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-import "./App.scss";
+import "./app.scss";
 
 interface ImageResponse {
   croppedImage: string;

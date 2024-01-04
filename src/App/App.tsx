@@ -18,7 +18,7 @@ export const App = () => {
 
     try {
       const response = await axios.post(
-        "http://77.68.31.93/process-image",
+        "https://ema-vlad.com/process-image",
         // "http://127.0.0.1:8000/process-image",
         new FormData(event.currentTarget),
         {

@@ -26,19 +26,25 @@
   border-radius: 1rem;
   padding: 1rem;
   display: flex;
-  width: 50rem;
+  width: 50rem; // Adjust if needed
   margin: 2rem auto;
   flex-direction: row;
-  height: 10rem;
+  height: auto; // Height should be auto to adjust to the content
   gap: 1rem;
   justify-content: center;
 
   div {
+    flex: 1; // Each div takes equal space
     text-align: center;
+    display: flex; // Use flex to center the image
+    align-items: center; // Center vertically
+    justify-content: center; // Center horizontally
+
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      max-width: 100%; // Limit width to the parent's width
+      max-height: 100%; // Limit height to the parent's height
+      height: auto; // Height is auto to maintain aspect ratio
+      object-fit: contain; // Image will be contained within the element
     }
   }
 }
